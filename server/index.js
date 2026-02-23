@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 const corsOptions = {
-  origin: ["https://beauty-wellness-app.vercel.app/", "http://localhost:5173"],
+  origin: ["https://beauty-wellness-app.vercel.app/", "http://localhost:5173", "*"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
